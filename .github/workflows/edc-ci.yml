@@ -27,11 +27,11 @@ jobs:
       - name: Run unit tests
         run: ./gradlew test
 
-      - name: Upload test reports
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: test-reports
-          path: build/reports/tests/test
+      # - name: Upload test reports
+      #   uses: actions/upload-artifact@v3.1.2
+      #   with:
+      #     name: test-reports
+      #     path: build/reports/tests/test
 
   security-scan:
     runs-on: ubuntu-latest
